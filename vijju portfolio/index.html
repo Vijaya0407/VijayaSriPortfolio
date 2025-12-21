@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vijaya Sri Donthu | UI/UX Designer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="top" class="dark">
+    <!-- Loading overlay -->
+    <div id="loading-overlay" aria-hidden="false">
+        <div class="loader" aria-hidden="true">
+            <span>L</span><span>O</span><span>A</span><span>D</span><span>I</span><span>N</span><span>G</span>
+        </div>
+    </div>
+    <header class="site-header">
+        <div class="container nav-wrap">
+            <div class="logo">Vijaya <span class="logo-accent">Sri</span></div>
+            <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+            <nav>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#top">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="container hero">
+            <div class="hero-left">
+                <h2 tabindex="0" class="headline-animate">Hi, I am <span class="hero-highlight">Vijaya Sri</span></h2><br>
+                <h1 tabindex="0" class="headline-animate">Design is not decoration — it’s communication.</h1>
+                <p class="sub sub-animate">I design beautiful, user-focused digital experiences—from logos to websites. I turn ideas into visuals that speak, engage, and inspire..</p>
+                <div class="hero-cta">
+                    <a class="btn primary" href="#projects">View Work</a>
+                    <a class="btn download" href="assets/resume.jpeg" target="_blank">View Resume</a>
+                </div>
+            </div>
+            <div class="hero-right">
+                <!-- Image lookup order: assets/profile.jpg -> profile.jpg -> placeholder -->
+                <div class="profile-frame" id="profileFrame">
+                  <img src="assets/vijju.png" alt="Vijaya Sri" class="profile"
+                      onerror="if(!this.dataset.fallback){this.dataset.fallback=1;this.src='profile.jpg';}else{this.src='assets/profile-placeholder.svg';}">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Photo modal -->
+    <div class="photo-modal" id="photoModal" aria-hidden="true">
+        <div class="photo-modal-content">
+            <button class="photo-close" aria-label="Close photo">×</button>
+            <img src="assets/vijju.png" alt="Vijaya Sri portrait">
+        </div>
+    </div>
+
+    <main>
+        <section id="about" class="container section">
+            <h2>About</h2>
+            <p class="muted">I design user-centered interfaces with attention to clarity, accessibility, and delightful micro-interactions. I work from research and wireframes to high-fidelity prototypes.</p>
+        </section>
+
+        <section id="skills" class="container section">
+            <h2>Skills</h2>
+            <div class="skills-wrapper">
+                <div class="skill-box">
+                    <h4>🎨 Designing Tools</h4>
+                    <div class="skill-list">
+                        <span class="skill-tag">🎨 Figma</span>
+                        <span class="skill-tag">✏️ Adobe XD</span>
+                        <span class="skill-tag">📱 Sketch</span>
+                        <span class="skill-tag">🖌️ Photoshop</span>
+                    </div>
+                </div>
+
+                <div class="skill-box">
+                    <h4>💻 Frontend Development</h4>
+                    <div class="skill-list">
+                        <span class="skill-tag">🌐 HTML</span>
+                        <span class="skill-tag">🎨 CSS</span>
+                        <span class="skill-tag">⚡ JavaScript</span>
+                        <span class="skill-tag">⚛️ React</span>
+                    </div>
+                </div>
+
+                <div class="skill-box">
+                    <h4>🎯 Design Skills</h4>
+                    <div class="skill-list">
+                        <span class="skill-tag">👁️ UI Design</span>
+                        <span class="skill-tag">📊 UX Research</span>
+                        <span class="skill-tag">🔧 Prototyping</span>
+                        <span class="skill-tag">📝 Wireframing</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="container section">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <h3>Portfolio Website</h3>
+                    <p>A responsive showcase with case studies and process notes.</p>
+                </article>
+                <article class="project-card">
+                    <h3>Mobile App UI</h3>
+                    <p>Designing easy, accessible flows for mobile-first users.</p>
+                </article>
+                <article class="project-card">
+                    <h3>Design System</h3>
+                    <p>Component libraries and tokens for consistent product UI.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="container section contact">
+            <h2>Contact</h2>
+            <p class="muted">Want to collaborate? Let's connect!</p>
+            <div class="contact-wrapper">
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=vijayasridonthu@gmail.com" target="_blank" rel="noopener noreferrer" class="contact-item">
+                    <span class="contact-icon">📧</span>
+                    <span class="contact-text">vijayasridonthu@gmail.com</span>
+                </a>
+                <a href="tel:+917989824727" class="contact-item">
+                    <span class="contact-icon">📞</span>
+                    <span class="contact-text">+91 7989824727</span>
+                </a>
+                <a href="https://www.linkedin.com/in/vijayasri-donthu-ab4821347" target="_blank" rel="noreferrer" class="contact-item">
+                    <span class="contact-icon">👤</span>
+                    <span class="contact-text">LinkedIn Profile</span>
+                </a>
+                <a href="https://github.com/Vijaya0407" target="_blank" rel="noreferrer" class="contact-item">
+                    <span class="contact-icon">👨‍💻</span>
+                    <span class="contact-text">GitHub Profile</span>
+                </a>
+            </div>
+        </section>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>© 2025 Vijaya Sri Donthu</p>
+            <p class="muted">Designed with care · UI/UX</p>
+        </div>
+    </footer>
+
+    <script>
+    // Mobile nav toggle
+    const toggle = document.querySelector('.nav-toggle');
+    const navLinks = document.getElementById('navLinks');
+    if(toggle && navLinks){
+        toggle.addEventListener('click', ()=>{
+            const expanded = toggle.getAttribute('aria-expanded') === 'true';
+            toggle.setAttribute('aria-expanded', String(!expanded));
+            navLinks.classList.toggle('open', !expanded);
+        });
+        document.addEventListener('click', (e)=>{
+            if(!navLinks.contains(e.target) && e.target !== toggle){
+                navLinks.classList.remove('open');
+                toggle.setAttribute('aria-expanded','false');
+            }
+        });
+    }
+
+    // Simple reveal on scroll
+    const obs = new IntersectionObserver((entries)=>{
+        entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('is-visible'); obs.unobserve(e.target); } });
+    },{threshold:0.12});
+    document.querySelectorAll('.hero-left, .hero-right, .project-card, .contact-card').forEach(el=>obs.observe(el));
+
+    // Smooth anchor scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+        a.addEventListener('click', (e)=>{
+            const href = a.getAttribute('href');
+            if(href.length>1){ e.preventDefault(); document.querySelector(href).scrollIntoView({behavior:'smooth', block:'start'}); }
+        });
+    });
+
+        // Photo modal
+        (function(){
+            const frame = document.getElementById('profileFrame');
+            const modal = document.getElementById('photoModal');
+            if(!frame || !modal) return;
+            const closeBtn = modal.querySelector('.photo-close');
+            const img = modal.querySelector('img');
+            const mainImg = frame.querySelector('img');
+
+            function openModal(){
+                modal.classList.add('open');
+                modal.setAttribute('aria-hidden','false');
+                if(mainImg && img){ img.src = mainImg.src; }
+            }
+            function closeModal(){
+                modal.classList.remove('open');
+                modal.setAttribute('aria-hidden','true');
+            }
+
+            frame.addEventListener('click', openModal);
+            closeBtn && closeBtn.addEventListener('click', closeModal);
+            modal.addEventListener('click', (e)=>{ if(e.target === modal) closeModal(); });
+            document.addEventListener('keydown', (e)=>{ if(e.key === 'Escape') closeModal(); });
+        })();
+
+    // Loading overlay: hide on window load, but force-hide after 5s max
+    (function(){
+        const ov = document.getElementById('loading-overlay');
+        if(!ov) return;
+        let hidden = false;
+        function hideOverlay(){
+            if(hidden) return; hidden = true;
+            ov.setAttribute('aria-hidden','true');
+            ov.classList.add('loaded');
+            ov.addEventListener('transitionend', ()=>{ try{ ov.remove(); }catch(e){} });
+            // final safety removal in case transitionend doesn't fire
+            setTimeout(()=>{ if(document.body.contains(ov)) ov.remove(); }, 1400);
+        }
+
+        // Max display: 10000ms
+        const maxTimer = setTimeout(()=>{ hideOverlay(); }, 10000);
+
+        // On full load, clear timer and hide immediately
+        window.addEventListener('load', ()=>{ clearTimeout(maxTimer); hideOverlay(); });
+    })();
+    </script>
+
+</body>
+</html>
